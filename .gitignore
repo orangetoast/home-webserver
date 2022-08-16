@@ -1,4 +1,5 @@
 /.idea
 
+/staticfiles
 secret.json
 db.sqlite3
