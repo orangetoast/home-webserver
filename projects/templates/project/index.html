@@ -8,7 +8,10 @@
     <h1>Projects</h1>
     <ul>
         {% for project in projects %}
-            <li>{{ project }}</li>
+            <li>{{ project.pk }} {{ project.project_name }}</li>
+            <li>{{ project.description }}</li>
+            <li>{{ project.start_date }}</li>
+            <li>{{ project.end_date }}</li>
         {% endfor %}
     </ul>
 </body>
