@@ -5,3 +5,4 @@ secret.json
 db.sqlite3
 nginx/nginx.conf
 */migrations
+*/ssl
