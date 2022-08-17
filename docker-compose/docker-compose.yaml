@@ -9,7 +9,7 @@ services:
       - "8080:80"
       - "443:443"
     volumes:
-      - ../staticfiles:./staticfiles
+      - ../staticfiles:/app/staticfiles
     depends_on:
       - server
 
@@ -19,4 +19,4 @@ services:
       dockerfile: Dockerfile
     container_name: server-container
     ports:
-      - "8080:8080"
+      - "8000:8000"
