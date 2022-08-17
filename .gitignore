@@ -3,5 +3,5 @@
 /staticfiles
 secret.json
 db.sqlite3
-nginx.conf
+nginx/nginx.conf
 */migrations

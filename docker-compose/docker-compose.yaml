@@ -1,0 +1,22 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: ../nginx
+      dockerfile: Dockerfile
+    container_name: nginx-container
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ../staticfiles:./staticfiles
+    depends_on:
+      - server
+
+  server:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: server-container
+    ports:
+      - "8080:8080"
